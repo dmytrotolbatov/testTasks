@@ -1,0 +1,52 @@
+#cinema-hall {
+  padding: 3%;
+}
+
+.inFocus {
+  background-color: blue;
+  color: white;
+  border: 1px solid black;
+}
+
+.booked {
+  background-color: lightcoral;
+}
+
+.exampleOfOccupied {
+  display: inline-block;
+  background-color: lightcoral;
+  border: solid 1px black;
+  width: 25px;
+  height: 25px;
+}
+
+.exampleOfEmpty {
+  display: inline-block;
+  background-color: white;
+  border: solid 1px black;
+  width: 25px;
+  height: 25px;
+}
+
+td :hover {
+  cursor: pointer;
+  background-color: beige;
+  color: black;
+}
+
+sup {
+  font-weight: bold;
+}
+
+.cell {
+  font-size: 1.3em;
+}
+
+#screen {
+  border: solid 1px black;
+  background-color: lightblue;
+  text-align: center;
+  border-radius: 20px;
+  font-size: xx-large;
+  letter-spacing: 50px;
+}

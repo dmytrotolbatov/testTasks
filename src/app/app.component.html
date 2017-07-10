@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div id="cinema-hall">
+  <div style="text-align:center">
+    <h1>
+      Welcome to our cinema!!!
+    </h1>
+  </div>
+  <button class="btn btn-primary" (click)="bookSeats()">Book chosen seats</button>
+  <h3><span class="exampleOfOccupied"></span> - occupied seats</h3>
+  <h3><span class="exampleOfEmpty"></span> - empty seats</h3>
+  <div id="screen">Screen</div>
+  <table class="table table-bordered">
+    <tr *ngFor="let row of rows">
+      <td *ngFor="let seat of row['seats']" class="cell">
+        <div (click)="setInFocus($event, seat)" [ngClass]="{'booked': seat.isBooked === 1}">
+          <sup>({{row.id}})</sup>  <sub>{{seat.id.toString().slice(-2)}}</sub>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
